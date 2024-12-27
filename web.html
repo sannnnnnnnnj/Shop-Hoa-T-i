@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng bán hoa</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 50px 10px;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Products Section */
+        .product-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .product-item {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 15px;
+            width: 200px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Contact Form */
+        form input, form textarea, form button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        form button {
+            background: #ff6f61;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Shop Hoa Tươi</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#products">Sản phẩm</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Chào mừng đến với Shop Hoa Tươi</h2>
+        <p>Hoa tươi mỗi ngày, giao hàng tận nơi!</p>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Sản phẩm nổi bật</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Hoa Hồng">
+                <h3>Bó Hoa Hồng</h3>
+                <p>Giá: 300.000 VND</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Hoa Lily">
+                <h3>Bó Hoa Lily</h3>
+                <p>Giá: 400.000 VND</p>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Hoa Cúc">
+                <h3>Bó Hoa Cúc</h3>
+                <p>Giá: 200.000 VND</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Liên hệ với chúng tôi</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Tên của bạn" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Lời nhắn" rows="5" required></textarea>
+            <button type="submit">Gửi</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Shop Hoa Tươi. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Cảm ơn bạn đã liên hệ với chúng tôi!');
+        });
+    </script>
+</body>
+</html>
